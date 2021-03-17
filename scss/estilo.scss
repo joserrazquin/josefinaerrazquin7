@@ -1,0 +1,550 @@
+@import "colores";
+@import "tamanios";
+
+* {
+    font-family: Raleway;
+}
+
+.parrafo {
+    font-size: 70px;
+    color: $bordo;
+}
+
+.parrafo-otro {
+    @extend .parrafo;
+    background-color: cadetblue;
+}
+
+.insta {
+    width: 15px;
+}
+
+.bio {
+    border: solid black 1px;
+}
+
+.fin {
+    background-color: lavender;
+    h3 {
+        font-style: solid;
+        p { font-style: oblique;
+
+        }
+    }
+}
+
+@mixin sizes ($width, $height) 
+{
+    height:$height;
+    width: $width;
+}
+
+.jose {
+    @include sizes (150px, 200px);
+}
+
+
+.footerPaginas {
+
+    &__links {
+        color: black;
+
+        &:hover {
+            text-decoration: none;
+            color: $bordo;
+        }
+
+    }
+
+    &__creditos {
+        &-firma {
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+            margin: -17px 38px 18px 482px;
+            text-align: center;
+
+        }
+
+        &-redes {
+            
+            &-instagram {
+                margin: 131px 20px 20px 584px;
+            }
+
+            &-linkedin {
+                margin: 131px 20px -67px 289px;
+
+            }
+
+            &-github {
+                margin: 131px 20px 20px -7px;
+            }
+
+            &-behance {
+                margin: 131px 20px 20px -300px;
+            }
+        }
+    }
+}
+
+.mainIndex{
+
+    &__intro{
+        position: absolute;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+        &-title{
+            flex-basis: 40%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            margin: -450px 20px 20px 40px;
+
+            &-inicial {
+                font-size: 120px;
+                color: white;
+                font-weight: bolder;
+            }
+
+            &-nombre {
+                font-size: 55px;
+                color: white;
+                font-weight: bolder;
+                margin: -45px 20px 20px 0px;
+            }
+
+            &-apellido {
+                font-size: 55px;
+                color: white;
+                font-weight: bolder;
+                margin: 54px 20px 20px -199px;
+            }
+        }
+
+        &-home {
+            margin: 20px 20px 20px 20px;
+            justify-content: center;
+
+            &-palabra {
+                font-size: 35px;
+                width: 100%;
+                color: white;
+                transition: all 1s;
+
+                &:hover {
+                    width: 200%;
+                    font-size: 45px;
+
+                }
+
+                &-link {
+                    color: black;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                    }
+        
+                }
+
+            }
+
+        }
+    }
+
+    &__carousel{
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+
+        &-foto1 {
+            object-position: 0px -150px;
+        }
+    }
+}
+
+.mainContact {
+
+    &__contacto {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+
+        &-name {
+            margin: 20px -146px 20px 316px;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        &-email {
+            margin: -38px -158px 30px 307px;
+            padding: 30px 30px 30px 30px;
+        }
+
+        &-phone {
+            margin: -41px -20px 20px 318px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        &-services {
+            margin: -18px 102px 20px 318px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        &-comments {
+            margin: -24px -151px 20px 317px;
+            padding: 20px 20px 20px 20px;
+
+        }
+
+        &-button {
+            margin: 11px 54px 50px 677px;
+            padding: 20px 20px 20px 20px;
+        }
+    }
+}   
+
+.mainHome {
+    &__foto1 {
+        margin-left: 20px;
+    }
+
+    &__foto2 {
+        margin-left: -144px;
+
+    }
+}
+
+
+.mainWork {
+
+    &__info {
+        transform: scale(1,0);
+        height: 100%;
+        transform-origin: bottom center;
+        bottom: 0%;
+        transition: transform 0.5s;
+        background-color: rgba(0, 0, 0, 0.445);
+
+        &-texto {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin: 138px 10px 10px -9px;
+        }
+
+    }
+
+    &__fila1 {
+
+        &-foto1 {
+            margin: 55px 20px 20px 177px;
+        }
+
+        &-foto2 {
+            margin: -358px 20px 20px 632px;
+        }
+    }
+
+    &__fila2 {
+
+        &-foto3 {
+            margin: -427px 20px 20px 227px;
+        }
+
+        &-foto4 {
+            margin: -208px 20px 20px 632px;
+        }
+    }
+
+    &__fila3 {
+
+        &-foto5 {
+            
+            margin: -227px 20px 20px 127px;
+        }
+
+        &-foto6 {
+
+            margin: -15px 20px 20px -45px;
+        }
+    }
+
+    &__fila4 {
+
+        &-foto7 {
+            
+            margin: -495px 20px 20px 27px;
+        }
+
+        &-foto8 {
+
+            margin: -91px 20px 20px -550px;
+        }
+    }
+
+    &__fila5 {
+
+        &-foto9 {
+
+            margin: -694px 20px 21px 632px;
+        }
+
+        &-foto10 {
+
+            margin: -390px 20px 20px 632px;
+        }
+    }
+
+    &__fila6 {
+
+        &-foto11 {
+
+            margin: -45px 20px 20px 127px;
+        }
+
+        &-foto12 {
+
+            margin: -323px 20px 20px 632px;
+
+        }
+    }
+   
+}
+
+.imgContainer {
+
+    &:hover .mainWork__info {
+
+        transform: scale(1);
+    }
+
+}
+
+.mainBlog {
+
+    &__span1 {
+        color: white;
+    }
+
+    &__span2 {
+        margin-left: -13px;
+    }
+
+    &__fila1 {
+
+        margin: -20px 20px 20px -18px;
+
+        &-art1 {
+            margin: 154px 20px 20px 568px;
+            position: absolute;
+
+            &-titulo {
+                margin: -37px 20px 31px 93px;
+                position: absolute;
+                font-weight: bold;
+                font-size: 50px;
+            }
+
+            &-parrafo {
+                margin: -228px 165px 20px 235px;
+            }
+
+            &-foto {
+                margin: -61px 20px 20px -176px;
+            }
+        }
+
+    }
+
+    &__fila2 {
+
+        margin: 1px 20px 20px -217px;
+
+        &-art2 {
+            margin: 123px 20px 20px 568px;
+            position: absolute;
+
+            &-titulo {
+                margin: 385px 20px 31px 288px;
+                position: absolute;
+                font-weight: bold;
+                font-size: 50px;
+            }
+
+            &-parrafo {
+                margin: -225px -37px 20px 432px;
+            }
+
+            &-foto {
+                margin: 355px 20px 20px 23px;
+            }
+
+        }
+        
+    }
+
+    &__fila3 {
+
+        margin: 819px 20px 20px -17px;
+
+        &-art3 {
+            margin: 123px 20px 20px 568px;
+            position: absolute;
+
+            &-titulo {
+                margin: -29px 20px 31px 156px;
+                position: absolute;
+                font-weight: bold;
+                font-size: 50px;
+            }
+
+            &-parrafo {
+                margin: -228px 155px 20px 234px;
+            }
+
+            &-foto {
+                margin: -61px 20px 20px -176px;
+            }
+
+        }
+    }
+
+    &__fila4 {
+        margin: 411px 20px 20px -15px;
+
+        &-art4 {
+            margin: 123px 20px 20px 568px;
+            position: absolute;
+
+            &-titulo {
+                margin: -29px 20px 31px 121px;
+                position: absolute;
+                font-weight: bold;
+                font-size: 50px;
+            }
+
+            &-parrafo {
+                margin: -227px 155px 20px 234px;
+            }
+
+            &-foto {
+                margin: -61px 20px 20px -176px;
+            }
+
+        }
+
+    }
+}
+
+.mainAbout {
+    &__container {
+
+        &-foto {
+            margin: 59px 20px 20px 525px;
+        }
+
+        &-bio {
+            margin: 59px 20px 20px -187px;
+        }
+    }
+}
+
+.headerHome {
+    &__titulo {
+        font-size: 110px;
+        margin: -8px 20px -5px 28px;
+
+        &-link {
+            color: black;
+
+            &:hover {
+                text-decoration: none;
+                color: $bordo;
+            }
+        }
+    }
+}
+
+.titulospag {
+    font-size: 80px;
+    margin: 15px 29px -17px 86px;
+    padding: 20px 20px 20px 20px;
+}
+
+.isologo {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.navegador {
+    margin: -105px 10px 10px 10px;
+    text-align: right;
+
+    &__button {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+    }
+
+
+    &__button:hover {
+        transform: scale(1.5,1.5);
+        color: $bordo;
+        
+    }
+
+}
+
+.footerBlog {
+    margin: 400px 20px 20px 20px;
+
+    &__links {
+        color: black;
+
+        &:hover {
+            text-decoration: none;
+            color: $bordo;
+        }
+
+    }
+
+
+    &__creditos {
+        &-firma {
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+            margin: -17px 38px 18px 482px;
+            text-align: center;
+
+        }
+
+        &-redes {
+
+            &-instagram {
+                margin: 131px 20px 20px 584px;
+            }
+
+            &-linkedin {
+                margin: 131px 20px -67px 298px;
+
+            }
+
+            &-github {
+                margin: 131px 20px 20px 12px;
+            }
+
+            &-behance {
+                margin: 131px 20px 20px -272px;
+            }
+        }
+    }
+
+}

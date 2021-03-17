@@ -1,0 +1,307 @@
+* {
+  font-family: Raleway; }
+
+.parrafo, .parrafo-otro {
+  font-size: 70px;
+  color: #AD0C1B; }
+
+.parrafo-otro {
+  background-color: cadetblue; }
+
+.insta {
+  width: 15px; }
+
+.bio {
+  border: solid black 1px; }
+
+.fin {
+  background-color: lavender; }
+  .fin h3 {
+    font-style: solid; }
+    .fin h3 p {
+      font-style: oblique; }
+
+.jose {
+  height: 200px;
+  width: 150px; }
+
+.footerPaginas__links {
+  color: black; }
+  .footerPaginas__links:hover {
+    text-decoration: none;
+    color: #AD0C1B; }
+
+.footerPaginas__creditos-firma {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin: -17px 38px 18px 482px;
+  text-align: center; }
+
+.footerPaginas__creditos-redes-instagram {
+  margin: 131px 20px 20px 584px; }
+
+.footerPaginas__creditos-redes-linkedin {
+  margin: 131px 20px -67px 289px; }
+
+.footerPaginas__creditos-redes-github {
+  margin: 131px 20px 20px -7px; }
+
+.footerPaginas__creditos-redes-behance {
+  margin: 131px 20px 20px -300px; }
+
+.mainIndex__intro {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+  .mainIndex__intro-title {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: -450px 20px 20px 40px; }
+    .mainIndex__intro-title-inicial {
+      font-size: 120px;
+      color: white;
+      font-weight: bolder; }
+    .mainIndex__intro-title-nombre {
+      font-size: 55px;
+      color: white;
+      font-weight: bolder;
+      margin: -45px 20px 20px 0px; }
+    .mainIndex__intro-title-apellido {
+      font-size: 55px;
+      color: white;
+      font-weight: bolder;
+      margin: 54px 20px 20px -199px; }
+  .mainIndex__intro-home {
+    margin: 20px 20px 20px 20px;
+    justify-content: center; }
+    .mainIndex__intro-home-palabra {
+      font-size: 35px;
+      width: 100%;
+      color: white;
+      transition: all 1s; }
+      .mainIndex__intro-home-palabra:hover {
+        width: 200%;
+        font-size: 45px; }
+      .mainIndex__intro-home-palabra-link {
+        color: black; }
+        .mainIndex__intro-home-palabra-link:hover {
+          text-decoration: none;
+          color: white; }
+
+.mainIndex__carousel {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh; }
+  .mainIndex__carousel-foto1 {
+    object-position: 0px -150px; }
+
+.mainContact__contacto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px; }
+  .mainContact__contacto-name {
+    margin: 20px -146px 20px 316px;
+    padding: 20px 20px 20px 20px; }
+  .mainContact__contacto-email {
+    margin: -38px -158px 30px 307px;
+    padding: 30px 30px 30px 30px; }
+  .mainContact__contacto-phone {
+    margin: -41px -20px 20px 318px;
+    padding: 20px 20px 20px 20px; }
+  .mainContact__contacto-services {
+    margin: -18px 102px 20px 318px;
+    padding: 20px 20px 20px 20px; }
+  .mainContact__contacto-comments {
+    margin: -24px -151px 20px 317px;
+    padding: 20px 20px 20px 20px; }
+  .mainContact__contacto-button {
+    margin: 11px 54px 50px 677px;
+    padding: 20px 20px 20px 20px; }
+
+.mainHome__foto1 {
+  margin-left: 20px; }
+
+.mainHome__foto2 {
+  margin-left: -144px; }
+
+.mainWork__info {
+  transform: scale(1, 0);
+  height: 100%;
+  transform-origin: bottom center;
+  bottom: 0%;
+  transition: transform 0.5s;
+  background-color: rgba(0, 0, 0, 0.445); }
+  .mainWork__info-texto {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 138px 10px 10px -9px; }
+
+.mainWork__fila1-foto1 {
+  margin: 55px 20px 20px 177px; }
+
+.mainWork__fila1-foto2 {
+  margin: -358px 20px 20px 632px; }
+
+.mainWork__fila2-foto3 {
+  margin: -427px 20px 20px 227px; }
+
+.mainWork__fila2-foto4 {
+  margin: -208px 20px 20px 632px; }
+
+.mainWork__fila3-foto5 {
+  margin: -227px 20px 20px 127px; }
+
+.mainWork__fila3-foto6 {
+  margin: -15px 20px 20px -45px; }
+
+.mainWork__fila4-foto7 {
+  margin: -495px 20px 20px 27px; }
+
+.mainWork__fila4-foto8 {
+  margin: -91px 20px 20px -550px; }
+
+.mainWork__fila5-foto9 {
+  margin: -694px 20px 21px 632px; }
+
+.mainWork__fila5-foto10 {
+  margin: -390px 20px 20px 632px; }
+
+.mainWork__fila6-foto11 {
+  margin: -45px 20px 20px 127px; }
+
+.mainWork__fila6-foto12 {
+  margin: -323px 20px 20px 632px; }
+
+.imgContainer:hover .mainWork__info {
+  transform: scale(1); }
+
+.mainBlog__span1 {
+  color: white; }
+
+.mainBlog__span2 {
+  margin-left: -13px; }
+
+.mainBlog__fila1 {
+  margin: -20px 20px 20px -18px; }
+  .mainBlog__fila1-art1 {
+    margin: 154px 20px 20px 568px;
+    position: absolute; }
+    .mainBlog__fila1-art1-titulo {
+      margin: -37px 20px 31px 93px;
+      position: absolute;
+      font-weight: bold;
+      font-size: 50px; }
+    .mainBlog__fila1-art1-parrafo {
+      margin: -228px 165px 20px 235px; }
+    .mainBlog__fila1-art1-foto {
+      margin: -61px 20px 20px -176px; }
+
+.mainBlog__fila2 {
+  margin: 1px 20px 20px -217px; }
+  .mainBlog__fila2-art2 {
+    margin: 123px 20px 20px 568px;
+    position: absolute; }
+    .mainBlog__fila2-art2-titulo {
+      margin: 385px 20px 31px 288px;
+      position: absolute;
+      font-weight: bold;
+      font-size: 50px; }
+    .mainBlog__fila2-art2-parrafo {
+      margin: -225px -37px 20px 432px; }
+    .mainBlog__fila2-art2-foto {
+      margin: 355px 20px 20px 23px; }
+
+.mainBlog__fila3 {
+  margin: 819px 20px 20px -17px; }
+  .mainBlog__fila3-art3 {
+    margin: 123px 20px 20px 568px;
+    position: absolute; }
+    .mainBlog__fila3-art3-titulo {
+      margin: -29px 20px 31px 156px;
+      position: absolute;
+      font-weight: bold;
+      font-size: 50px; }
+    .mainBlog__fila3-art3-parrafo {
+      margin: -228px 155px 20px 234px; }
+    .mainBlog__fila3-art3-foto {
+      margin: -61px 20px 20px -176px; }
+
+.mainBlog__fila4 {
+  margin: 411px 20px 20px -15px; }
+  .mainBlog__fila4-art4 {
+    margin: 123px 20px 20px 568px;
+    position: absolute; }
+    .mainBlog__fila4-art4-titulo {
+      margin: -29px 20px 31px 121px;
+      position: absolute;
+      font-weight: bold;
+      font-size: 50px; }
+    .mainBlog__fila4-art4-parrafo {
+      margin: -227px 155px 20px 234px; }
+    .mainBlog__fila4-art4-foto {
+      margin: -61px 20px 20px -176px; }
+
+.mainAbout__container-foto {
+  margin: 59px 20px 20px 525px; }
+
+.mainAbout__container-bio {
+  margin: 59px 20px 20px -187px; }
+
+.headerHome__titulo {
+  font-size: 110px;
+  margin: -8px 20px -5px 28px; }
+  .headerHome__titulo-link {
+    color: black; }
+    .headerHome__titulo-link:hover {
+      text-decoration: none;
+      color: #AD0C1B; }
+
+.titulospag {
+  font-size: 80px;
+  margin: 15px 29px -17px 86px;
+  padding: 20px 20px 20px 20px; }
+
+.isologo {
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px; }
+
+.navegador {
+  margin: -105px 10px 10px 10px;
+  text-align: right; }
+  .navegador__button {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s; }
+  .navegador__button:hover {
+    transform: scale(1.5, 1.5);
+    color: #AD0C1B; }
+
+.footerBlog {
+  margin: 400px 20px 20px 20px; }
+  .footerBlog__links {
+    color: black; }
+    .footerBlog__links:hover {
+      text-decoration: none;
+      color: #AD0C1B; }
+  .footerBlog__creditos-firma {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin: -17px 38px 18px 482px;
+    text-align: center; }
+  .footerBlog__creditos-redes-instagram {
+    margin: 131px 20px 20px 584px; }
+  .footerBlog__creditos-redes-linkedin {
+    margin: 131px 20px -67px 298px; }
+  .footerBlog__creditos-redes-github {
+    margin: 131px 20px 20px 12px; }
+  .footerBlog__creditos-redes-behance {
+    margin: 131px 20px 20px -272px; }
